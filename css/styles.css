@@ -1,0 +1,286 @@
+html {
+    box-sizing: border-box;
+}
+*, *:after, *:before {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body {
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{background-image: url(../hero.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+height: 100vh;
+background-attachment: fixed;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+position: relative;
+}
+.logo{width: 55%;}
+
+
+@media screen and (max-width:580px) {
+    
+
+    .logo{ width: 98%;
+    margin: 0px auto;}
+
+}
+.barra{
+    width: 100%;
+    background-color: #008fd1;
+    margin: 1rem 0px;
+padding: 1rem 0px;
+}
+.header-contenido{
+
+    position: absolute;
+    top:30%;
+    left: 10%;
+    font-size: 1.8rem;
+    width: 50%;
+    color: #008fd1;
+    
+}
+.barra .contenedor {display: flex;
+justify-content: space-between;
+
+
+}
+
+
+@media screen and (max-width:580px) {
+    
+
+    .barra .contenedor{ display: flex;
+       flex-direction: column;
+        
+        }
+}
+
+.navegacion{ width: 30%;}
+
+
+
+@media screen and (max-width:780px) {
+    
+
+    .navegacion{ width: 50%;}
+}
+
+
+@media screen and (max-width:580px) {
+    
+
+    .navegacion{ width: 100%;}
+    .navegacion ul{ display: flex;
+    justify-content: space-around;
+    }
+    .navegacion ul li{ 
+        flex-grow: 0;
+    }
+   
+}
+
+nav ul {display: flex;
+flex-direction: row;
+
+
+}
+
+nav ul li{flex-grow: 1;
+list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+h2 {
+    flex: 0 1 100%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    margin:0;
+    font-weight: 700;
+
+}
+img {
+    max-width: 100%;
+}
+
+/* Contenido */
+.contenido {
+    background-color: white;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.contenido {
+    padding: 1rem;
+    text-align: center;
+}
+.contenido h3 {
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+.contenido span {
+    color:#db008d;
+}
+.boton {
+    background-color: #008fd1;
+    color: white;
+    padding: .6rem 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+.categorias ul {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 0px;
+}
+
+
+
+.categorias ul li{list-style: none;
+padding: 2rem;
+flex: 1;
+}
+
+
+.categorias ul li:nth-child(1) {
+
+background-color: #008fd1;
+}
+
+
+.categorias ul li:nth-child(2) {
+
+    background-color: palevioletred
+    }
+
+    
+.categorias ul li:nth-child(3) {
+
+    background-color:purple
+    }
+
+    
+.categorias ul li:nth-child(4) {
+
+    background-color: yellow;
+    }
+
+    .categorias ul li a{
+
+        text-decoration: none;
+        color: white;
+        font-size: 1.4rem;
+        display: block;
+        text-align: center;
+    }
+
+
+footer{background-color: #008fd1;
+margin-top: 1rem ;}
+
+footer .contenedor{
+display: flex;
+margin: 1rem;
+
+}
+
+footer .contenedor div{
+
+    flex: 1;
+    color: white;
+
+}
+
+.copyright{
+
+    background-color: #004d70;
+ margin: 0px;   
+ padding: .8rem;
+ 
+ color: white;
+ text-align: center;
+}
+
+
+.sociales ul {
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between
+}
+
+
+@media screen and (min-width:480px) {
+  .sociales ul{
+      align-items: center;
+  }
+    }
+
+.sociales ul li {
+   flex: 0 1 15%;
+   
+}
+
+@media screen and (min-width:480px) {
+    .contenido-principal {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .entrada {
+        flex: 0 1 calc(50% - 1rem);
+
+    }
+
+    .sociales ul li {
+        width: 70px;
+        margin-top: 20px;
+        
+     }   
+}
+
+@media screen and (min-width:780px) {
+    
+    .categorias ul{flex-wrap: nowrap;
+        justify-content: space-between;
+    
+    }
+    
+    .sociales ul{flex-direction: row;}    
+
+}
+
+.caja ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
